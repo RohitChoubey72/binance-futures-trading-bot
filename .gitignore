@@ -1,4 +1,4 @@
 .env
 __pycache__/
 *.pyc
-logs/*.log 
+logs/*.log .env 
