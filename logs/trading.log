@@ -1,0 +1,101 @@
+2026-06-12 14:56:35 [ERROR] bot.cli - Configuration failed: Missing or default configuration keys found: BINANCE_API_KEY, BINANCE_SECRET_KEY. Please set them in your .env file at: D:\Python Interview\trading_bot\.env
+2026-06-12 14:56:46 [ERROR] bot.cli - Configuration failed: Missing or default configuration keys found: BINANCE_API_KEY, BINANCE_SECRET_KEY. Please set them in your .env file at: D:\Python Interview\trading_bot\.env
+2026-06-12 14:56:53 [ERROR] bot.cli - Configuration failed: Missing or default configuration keys found: BINANCE_API_KEY, BINANCE_SECRET_KEY. Please set them in your .env file at: D:\Python Interview\trading_bot\.env
+2026-06-12 14:57:00 [ERROR] bot.cli - Validation failed: Invalid symbol format: 'BTC-USDT'. Symbol must be uppercase alphanumeric and between 3 to 12 characters (e.g., BTCUSDT).
+2026-06-12 14:57:07 [ERROR] bot.cli - Validation failed: Quantity must be a positive number. Got: -1.0
+2026-06-12 14:57:14 [ERROR] bot.cli - Validation failed: Price is required for LIMIT orders.
+2026-06-12 14:57:25 [ERROR] bot.cli - Validation failed: Price should not be provided for MARKET orders.
+2026-06-12 14:57:43 [INFO] bot.cli - Order request submitted - Symbol: BTCUSDT, Side: BUY, Type: MARKET, Qty: 0.001, Price: None
+2026-06-12 14:57:43 [DEBUG] bot.client - BinanceFuturesClient initialized with base URL: https://testnet.binancefuture.com
+2026-06-12 14:57:43 [INFO] bot.orders - Preparing MARKET BUY order for BTCUSDT (Qty: 0.001)
+2026-06-12 14:57:43 [DEBUG] bot.client - Placing order, URL: https://testnet.binancefuture.com/fapi/v1/order, Payload keys: ['symbol', 'side', 'type', 'quantity', 'timestamp', 'signature']
+2026-06-12 14:57:43 [DEBUG] httpcore.connection - connect_tcp.started host='testnet.binancefuture.com' port=443 local_address=None timeout=15.0 socket_options=None
+2026-06-12 14:57:43 [DEBUG] httpcore.connection - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001636DE05160>
+2026-06-12 14:57:43 [DEBUG] httpcore.connection - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001636DE0C870> server_hostname='testnet.binancefuture.com' timeout=15.0
+2026-06-12 14:57:43 [DEBUG] httpcore.connection - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001636DD42D50>
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - send_request_headers.started request=<Request [b'POST']>
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - send_request_headers.complete
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - send_request_body.started request=<Request [b'POST']>
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - send_request_body.complete
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - receive_response_headers.started request=<Request [b'POST']>
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'application/json'), (b'Content-Length', b'46'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 12 Jun 2026 09:27:43 GMT'), (b'Access-Control-Allow-Methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'Server', b'nginx'), (b'x-mbx-used-weight-1m', b'-1'), (b'x-response-time', b'0ms'), (b'Access-Control-Allow-Origin', b'*'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 ea1cc9a0bd62265dfb9c020807bb4876.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P1'), (b'X-Amz-Cf-Id', b'gr208C0vWo97UIXu5BFxuGqXiprLjG0mF0rvy9EuL5XDwUVkMbnxRQ==')])
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - receive_response_body.started request=<Request [b'POST']>
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - receive_response_body.complete
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - response_closed.started
+2026-06-12 14:57:43 [DEBUG] httpcore.http11 - response_closed.complete
+2026-06-12 14:57:43 [ERROR] bot.client - Binance API error response: Status 401 - Code -2014: API-key format invalid.
+2026-06-12 14:57:43 [ERROR] bot.cli - Order execution failed: API Error (Status 401): Code -2014 - API-key format invalid.
+2026-06-12 14:57:43 [DEBUG] httpcore.connection - close.started
+2026-06-12 14:57:43 [DEBUG] httpcore.connection - close.complete
+2026-06-12 14:57:43 [DEBUG] bot.client - BinanceFuturesClient HTTP connection closed.
+2026-06-12 14:57:51 [INFO] bot.cli - Order request submitted - Symbol: BTCUSDT, Side: SELL, Type: LIMIT, Qty: 0.001, Price: 120000.0
+2026-06-12 14:57:51 [DEBUG] bot.client - BinanceFuturesClient initialized with base URL: https://testnet.binancefuture.com
+2026-06-12 14:57:51 [INFO] bot.orders - Preparing LIMIT SELL order for BTCUSDT (Qty: 0.001, Price: 120000.0, TIF: GTC)
+2026-06-12 14:57:51 [DEBUG] bot.client - Placing order, URL: https://testnet.binancefuture.com/fapi/v1/order, Payload keys: ['symbol', 'side', 'type', 'quantity', 'price', 'timeInForce', 'timestamp', 'signature']
+2026-06-12 14:57:51 [DEBUG] httpcore.connection - connect_tcp.started host='testnet.binancefuture.com' port=443 local_address=None timeout=15.0 socket_options=None
+2026-06-12 14:57:51 [DEBUG] httpcore.connection - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025C7D7E5160>
+2026-06-12 14:57:51 [DEBUG] httpcore.connection - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000025C7D7EC870> server_hostname='testnet.binancefuture.com' timeout=15.0
+2026-06-12 14:57:51 [DEBUG] httpcore.connection - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025C7CF26D50>
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - send_request_headers.started request=<Request [b'POST']>
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - send_request_headers.complete
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - send_request_body.started request=<Request [b'POST']>
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - send_request_body.complete
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - receive_response_headers.started request=<Request [b'POST']>
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'application/json'), (b'Content-Length', b'46'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 12 Jun 2026 09:27:51 GMT'), (b'Access-Control-Allow-Methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'Server', b'nginx'), (b'x-mbx-used-weight-1m', b'-1'), (b'x-response-time', b'0ms'), (b'Access-Control-Allow-Origin', b'*'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 f24f9310b14fa00c5109a38fb0cc6c0a.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P1'), (b'X-Amz-Cf-Id', b'WxjHr9T4d_aLnAztF6Z_Y75ljWezb5E2ccLOV35eWpRLWWdO4yFH_w==')])
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - receive_response_body.started request=<Request [b'POST']>
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - receive_response_body.complete
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - response_closed.started
+2026-06-12 14:57:51 [DEBUG] httpcore.http11 - response_closed.complete
+2026-06-12 14:57:51 [ERROR] bot.client - Binance API error response: Status 401 - Code -2014: API-key format invalid.
+2026-06-12 14:57:51 [ERROR] bot.cli - Order execution failed: API Error (Status 401): Code -2014 - API-key format invalid.
+2026-06-12 14:57:51 [DEBUG] httpcore.connection - close.started
+2026-06-12 14:57:51 [DEBUG] httpcore.connection - close.complete
+2026-06-12 14:57:51 [DEBUG] bot.client - BinanceFuturesClient HTTP connection closed.
+2026-06-12 19:19:54 [INFO] bot.cli - Order request submitted - Symbol: BTCUSDT, Side: BUY, Type: MARKET, Qty: 0.001, Price: None
+2026-06-12 19:19:54 [DEBUG] bot.client - BinanceFuturesClient initialized with base URL: https://testnet.binancefuture.com
+2026-06-12 19:19:54 [INFO] bot.orders - Preparing MARKET BUY order for BTCUSDT (Qty: 0.001)
+2026-06-12 19:19:54 [DEBUG] bot.client - Placing order, URL: https://testnet.binancefuture.com/fapi/v1/order, Payload keys: ['symbol', 'side', 'type', 'quantity', 'timestamp', 'signature']
+2026-06-12 19:19:54 [DEBUG] httpcore.connection - connect_tcp.started host='testnet.binancefuture.com' port=443 local_address=None timeout=15.0 socket_options=None
+2026-06-12 19:19:54 [DEBUG] httpcore.connection - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000209C0695160>
+2026-06-12 19:19:54 [DEBUG] httpcore.connection - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000209C069C870> server_hostname='testnet.binancefuture.com' timeout=15.0
+2026-06-12 19:19:54 [DEBUG] httpcore.connection - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000209C05D2D50>
+2026-06-12 19:19:54 [DEBUG] httpcore.http11 - send_request_headers.started request=<Request [b'POST']>
+2026-06-12 19:19:54 [DEBUG] httpcore.http11 - send_request_headers.complete
+2026-06-12 19:19:54 [DEBUG] httpcore.http11 - send_request_body.started request=<Request [b'POST']>
+2026-06-12 19:19:54 [DEBUG] httpcore.http11 - send_request_body.complete
+2026-06-12 19:19:54 [DEBUG] httpcore.http11 - receive_response_headers.started request=<Request [b'POST']>
+2026-06-12 19:19:55 [DEBUG] httpcore.http11 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 12 Jun 2026 13:49:54 GMT'), (b'x-xss-protection', b'1; mode=block'), (b'Content-Encoding', b'gzip'), (b'Server', b'nginx'), (b'Vary', b'Accept-Encoding'), (b'x-mbx-used-weight-1m', b'-1'), (b'x-mbx-order-count-10s', b'1'), (b'x-mbx-order-count-1m', b'1'), (b'x-response-time', b'5ms'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'Content-Security-Policy', b"default-src 'self'"), (b'cache-control', b'no-cache, no-store, must-revalidate'), (b'expires', b'0'), (b'pragma', b'no-cache'), (b'strict-transport-security', b'max-age=31536000; includeSubdomains'), (b'x-content-type-options', b'nosniff'), (b'x-frame-options', b'SAMEORIGIN'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 8d1e22ab9ec728784eb011aab5e21148.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P1'), (b'X-Amz-Cf-Id', b'kDkgCUYQEkyZ8mUtpJwPwFriC6JwMuUgraX0JbFycKRQoP3O7WuLyw==')])
+2026-06-12 19:19:55 [DEBUG] httpcore.http11 - receive_response_body.started request=<Request [b'POST']>
+2026-06-12 19:19:55 [DEBUG] httpcore.http11 - receive_response_body.complete
+2026-06-12 19:19:55 [DEBUG] httpcore.http11 - response_closed.started
+2026-06-12 19:19:55 [DEBUG] httpcore.http11 - response_closed.complete
+2026-06-12 19:19:55 [DEBUG] bot.client - Order response successfully received: {'orderId': 15024822021, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'ptOwWwwyRJBRnkgX2Fnhln', 'price': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1781272194657}
+2026-06-12 19:19:55 [DEBUG] bot.orders - Normalized order response: {'order_id': 15024822021, 'client_order_id': 'ptOwWwwyRJBRnkgX2Fnhln', 'symbol': 'BTCUSDT', 'status': 'NEW', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'executed_quantity': 0.0, 'price': 0.0, 'average_price': 0.0, 'time_in_force': 'GTC', 'cum_quote': 0.0, 'update_time': 1781272194657}
+2026-06-12 19:19:55 [INFO] bot.cli - Order placed successfully. ID: 15024822021
+2026-06-12 19:19:55 [DEBUG] httpcore.connection - close.started
+2026-06-12 19:19:55 [DEBUG] httpcore.connection - close.complete
+2026-06-12 19:19:55 [DEBUG] bot.client - BinanceFuturesClient HTTP connection closed.
+2026-06-12 19:20:03 [INFO] bot.cli - Order request submitted - Symbol: BTCUSDT, Side: SELL, Type: LIMIT, Qty: 0.001, Price: 120000.0
+2026-06-12 19:20:03 [DEBUG] bot.client - BinanceFuturesClient initialized with base URL: https://testnet.binancefuture.com
+2026-06-12 19:20:03 [INFO] bot.orders - Preparing LIMIT SELL order for BTCUSDT (Qty: 0.001, Price: 120000.0, TIF: GTC)
+2026-06-12 19:20:03 [DEBUG] bot.client - Placing order, URL: https://testnet.binancefuture.com/fapi/v1/order, Payload keys: ['symbol', 'side', 'type', 'quantity', 'price', 'timeInForce', 'timestamp', 'signature']
+2026-06-12 19:20:03 [DEBUG] httpcore.connection - connect_tcp.started host='testnet.binancefuture.com' port=443 local_address=None timeout=15.0 socket_options=None
+2026-06-12 19:20:03 [DEBUG] httpcore.connection - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001D50E595160>
+2026-06-12 19:20:03 [DEBUG] httpcore.connection - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D50E59C870> server_hostname='testnet.binancefuture.com' timeout=15.0
+2026-06-12 19:20:03 [DEBUG] httpcore.connection - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001D50DCD6D50>
+2026-06-12 19:20:03 [DEBUG] httpcore.http11 - send_request_headers.started request=<Request [b'POST']>
+2026-06-12 19:20:03 [DEBUG] httpcore.http11 - send_request_headers.complete
+2026-06-12 19:20:03 [DEBUG] httpcore.http11 - send_request_body.started request=<Request [b'POST']>
+2026-06-12 19:20:03 [DEBUG] httpcore.http11 - send_request_body.complete
+2026-06-12 19:20:03 [DEBUG] httpcore.http11 - receive_response_headers.started request=<Request [b'POST']>
+2026-06-12 19:20:04 [DEBUG] httpcore.http11 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 12 Jun 2026 13:50:03 GMT'), (b'x-xss-protection', b'1; mode=block'), (b'Content-Encoding', b'gzip'), (b'Server', b'nginx'), (b'Vary', b'Accept-Encoding'), (b'x-mbx-used-weight-1m', b'-1'), (b'x-mbx-order-count-10s', b'1'), (b'x-mbx-order-count-1m', b'1'), (b'x-response-time', b'4ms'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, PUT, DELETE, OPTIONS'), (b'Content-Security-Policy', b"default-src 'self'"), (b'cache-control', b'no-cache, no-store, must-revalidate'), (b'expires', b'0'), (b'pragma', b'no-cache'), (b'strict-transport-security', b'max-age=31536000; includeSubdomains'), (b'x-content-type-options', b'nosniff'), (b'x-frame-options', b'SAMEORIGIN'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 676c1e5efc888625a4e69fae909fbcf6.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P1'), (b'X-Amz-Cf-Id', b'CL2NalyWuY3MQtiRP4I1kaXt8xO_obdzD1WdBJ0jWjPcPkcAWj1ghw==')])
+2026-06-12 19:20:04 [DEBUG] httpcore.http11 - receive_response_body.started request=<Request [b'POST']>
+2026-06-12 19:20:04 [DEBUG] httpcore.http11 - receive_response_body.complete
+2026-06-12 19:20:04 [DEBUG] httpcore.http11 - response_closed.started
+2026-06-12 19:20:04 [DEBUG] httpcore.http11 - response_closed.complete
+2026-06-12 19:20:04 [DEBUG] bot.client - Order response successfully received: {'orderId': 15024830657, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'BK1ayrUvQOOR8IFrwyrBMR', 'price': '120000.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1781272203544}
+2026-06-12 19:20:04 [DEBUG] bot.orders - Normalized order response: {'order_id': 15024830657, 'client_order_id': 'BK1ayrUvQOOR8IFrwyrBMR', 'symbol': 'BTCUSDT', 'status': 'NEW', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'executed_quantity': 0.0, 'price': 120000.0, 'average_price': 0.0, 'time_in_force': 'GTC', 'cum_quote': 0.0, 'update_time': 1781272203544}
+2026-06-12 19:20:04 [INFO] bot.cli - Order placed successfully. ID: 15024830657
+2026-06-12 19:20:04 [DEBUG] httpcore.connection - close.started
+2026-06-12 19:20:04 [DEBUG] httpcore.connection - close.complete
+2026-06-12 19:20:04 [DEBUG] bot.client - BinanceFuturesClient HTTP connection closed.
